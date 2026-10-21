@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Chat Refresher</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+<main>
+<h1>Claude Chat Refresher</h1>
+<label class="toggle"><input id="enabled" type="checkbox"><span>Automatic refresh</span></label>
+<section><div class="label">Status</div><div id="status">Checking…</div><div id="detail"></div></section>
+<section><div class="label">Claude reset</div><div id="reset">Not detected yet</div></section>
+<label>Background check interval
+<select id="interval">
+<option value="5000">5 seconds</option><option value="10000">10 seconds</option>
+<option value="15000">15 seconds</option><option value="30000">30 seconds</option>
+<option value="60000">60 seconds</option>
+</select></label>
+<p class="note">The extension reads the reset time Claude displays, schedules a browser alarm for that time, and then clicks Claude's own enabled Continuar button. It does not change or bypass the limit.</p>
+</main><script src="popup.js"></script>
+</body></html>

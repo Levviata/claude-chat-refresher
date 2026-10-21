@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Chat Availability Refresher",
+  "version": "1.4.0",
+  "description": "Schedules Claude's normal conversation refresh for the reset time shown by Claude, then clicks the enabled Continuar control.",
+  "permissions": [
+    "storage",
+    "alarms",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://claude.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Claude Chat Refresher",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://claude.ai/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

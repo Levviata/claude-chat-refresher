@@ -1,0 +1,5 @@
+body{width:300px;margin:0;padding:16px;font:14px system-ui,sans-serif;background:#fff;color:#202020}
+h1{font-size:18px;margin:0 0 16px}section{margin:16px 0}.label{font-size:12px;opacity:.65;margin-bottom:4px}
+#status{font-weight:600}#detail,#reset{margin-top:4px;font-size:11px;opacity:.7;word-break:break-word}
+label{display:block;margin:12px 0}select{width:100%;margin-top:6px;padding:6px}.toggle{display:flex;gap:8px;align-items:center}
+.note{font-size:11px;line-height:1.4;opacity:.65}
